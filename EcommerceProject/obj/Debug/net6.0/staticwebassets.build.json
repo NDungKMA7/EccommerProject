@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cux4RqxLunQd1txHZmBX1bnnFUvn1zOQM7pExwMbYwY=",
+  "Hash": "OuR1wJ9QatD2phv5GnhKumhPQ2eplwnbGh5CaaHHt5I=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -12680,6 +12680,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Slides\\133316643510413978_Screenshot 2023-06-19 222506.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133316648925538998_Screenshot 2023-05-09 210323.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Slides/133316648925538998_Screenshot 2023-05-09 210323.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Slides\\133316648925538998_Screenshot 2023-05-09 210323.png"
     }
   ]
 }
