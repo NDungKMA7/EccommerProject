@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\Upload\\Adv\\133196271044757185_size-banner-widget.jpg"
     },
     {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133318326410031165_Screenshot 2023-05-09 223114.png",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133318326410031165_Screenshot 2023-05-09 223114.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133318326498247207_Screenshot 2023-05-18 131442.png",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133318326498247207_Screenshot 2023-05-18 131442.png"
+    },
+    {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133173136682521212_000000000010020041-senheiser-hd449--1-9-2-151336.jpg",
       "PackagePath": "staticwebassets\\Upload\\Products\\133173136682521212_000000000010020041-senheiser-hd449--1-9-2-151336.jpg"
     },
@@ -115,6 +123,10 @@
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133316643510413978_Screenshot 2023-06-19 222506.png",
       "PackagePath": "staticwebassets\\Upload\\Slides\\133316643510413978_Screenshot 2023-06-19 222506.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133316648925538998_Screenshot 2023-05-09 210323.png",
+      "PackagePath": "staticwebassets\\Upload\\Slides\\133316648925538998_Screenshot 2023-05-09 210323.png"
     },
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\ckeditor\\CHANGES.md",

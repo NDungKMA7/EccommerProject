@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cux4RqxLunQd1txHZmBX1bnnFUvn1zOQM7pExwMbYwY=",
+  "Hash": "axJ0y3kdj3glpO4A1Kah/b0PAxBln7bGRFWD16UtLww=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -12274,6 +12274,40 @@
       "OriginalItemSpec": "wwwroot\\Upload\\Adv\\133196271044757185_size-banner-widget.jpg"
     },
     {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133318326410031165_Screenshot 2023-05-09 223114.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Adv/133318326410031165_Screenshot 2023-05-09 223114.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Adv\\133318326410031165_Screenshot 2023-05-09 223114.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133318326498247207_Screenshot 2023-05-18 131442.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Adv/133318326498247207_Screenshot 2023-05-18 131442.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Adv\\133318326498247207_Screenshot 2023-05-18 131442.png"
+    },
+    {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133173136682521212_000000000010020041-senheiser-hd449--1-9-2-151336.jpg",
       "SourceId": "EcommerceProject",
       "SourceType": "Discovered",
@@ -12680,6 +12714,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Slides\\133316643510413978_Screenshot 2023-06-19 222506.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133316648925538998_Screenshot 2023-05-09 210323.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Slides/133316648925538998_Screenshot 2023-05-09 210323.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Slides\\133316648925538998_Screenshot 2023-05-09 210323.png"
     }
   ]
 }
