@@ -1,0 +1,81 @@
+﻿@{
+	//Load file Layout.cshtml
+		Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+
+}@{
+    string disabledAttribute = Model != null ? "disabled" : "";
+}
+                    <div class="col-md-12">  
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Add edit user</div>
+                            <div class="panel-body">
+                            <form method="post" action="@ViewBag.action">
+                                <!-- rows -->
+                                <div class="row" style="margin-top:5px;">
+                                    <div class="col-md-2">Name</div>
+                                    <div class="col-md-10">
+                                        <input type="text" value="@if(Model != null){<text>@Model.Name</text>}" name="name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <!-- end rows -->
+                <!-- rows -->
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-2">UserName</div>
+                    <div class="col-md-10">
+                        <input type="text" value="@if(Model != null){
+                        <text>@Model.UserName</text> 
+}" name="userName" class="form-control" required>
+                    </div>
+                </div>
+                <!-- end rows -->
+                                <!-- rows -->
+                                <div class="row" style="margin-top:5px;">
+                                    <div class="col-md-2">Email</div>
+                                    <div class="col-md-10">
+                                        @*thuộc tính disable là không nhập được text vào ô textbox*@
+                        <input type="email" value="@if(Model != null){
+                        <text>@Model.Email</text>
+}" name="email" @if (Model != null)
+                        {
+                            <text>disable</text>
+                        } @disabledAttribute class="form-control" required>
+                                    </div>
+                                </div>
+                                <!-- end rows -->
+                                <!-- rows -->
+                                <div class="row" style="margin-top:5px;">
+                                    <div class="col-md-2">Password</div>
+                                    <div class="col-md-10">
+                                        <input type="password" name="password" @if(Model != null){ <text>placeholder="Không đổi password thì không nhập thông tin vào ô textbox này"</text> }else{ <text>required</text> } class="form-control">
+                                    </div>
+                                </div>
+                                <!-- end rows -->
+                                  <!-- rows -->
+                @if (ViewBag.listRoles != null)
+                {
+                    <div class="row" style="margin-top:5px;">
+                        <div class="col-md-2">Role</div>
+                        <div class="col-md-10">
+                            <select name="selectedRoles" class="form-control">
+                                
+                                @foreach (var role in ViewBag.listRoles)
+                                {
+                                    <option value="@role.Name">@role.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                }
+                <!-- end rows -->
+                                <!-- rows -->
+                                <div class="row" style="margin-top:5px;">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <input type="submit" value="Process" class="btn btn-primary">
+                                    </div>
+                                </div>
+                                <!-- end rows -->
+                            </form>
+                            </div>
+                        </div>
+                    </div>
