@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lHodvZh1Td1obZEnPLQAQjStHAuq2phxMdMEVQOpfPY=",
+  "Hash": "jncmsthxlT4+0QAKbMLhPeuaPLSa8CickZ9M73Ei0Uw=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -12595,6 +12595,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Products\\133196283030880996_tools_equipment_6.jpg"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133323549083626699_Screenshot 2023-06-26 162404.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Products/133323549083626699_Screenshot 2023-06-26 162404.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Products\\133323549083626699_Screenshot 2023-06-26 162404.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133323557816783271_Screenshot 2023-05-18 133939.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Products/133323557816783271_Screenshot 2023-05-18 133939.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Products\\133323557816783271_Screenshot 2023-05-18 133939.png"
     },
     {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133196260397660608_main-slider-1-2.jpg",
