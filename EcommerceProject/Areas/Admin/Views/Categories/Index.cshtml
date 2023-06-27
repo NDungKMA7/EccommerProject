@@ -1,73 +1,70 @@
 ﻿@{
-    //Load file Layout.cshtml
-    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+//Load file Layout.cshtml
+Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
 
 }
 @using EcommerceProject.Models;
 @using EcommerceProject.Models.Mapping;
 @using X.PagedList
 @using X.PagedList.Mvc.Core
+@functions{
+    public string listParent(int _categoryId)
+    {
+        string str = "";
+        List<ItemCategory> categoriesList = ViewBag.ListCategories;
+        List<ItemCategory> categoriesParent = categoriesList.Where(cp => cp.ParentId == _categoryId).ToList();
 
+        foreach(var itemSub in categoriesParent)
+        {
+            str += "<tr>";
+            str += "<td style=\"padding-left:30px;\">" + itemSub.Name + "</td>";
+            str += "<td style=\"text-align:center;\">";
+            str += "<a href=\"/Admin/Categories/Update/" + itemSub.Id + "\">Edit</a>&nbsp;";
+            str += "<a href=\"/Admin/Categories/Delete/" + itemSub.Id + "\" onclick=\"return window.confirm('Are you sure?');\">Delete</a>";
+            str += "</td>";
+            str += "</tr>";
+        }
+        
+        return str;
+    }
+}
 
-<div class="col-md-12">
-    <div style="margin-bottom:5px;">
-        <a href="/Admin/Categories/Create" class="btn btn-primary">Add Category</a>
-    </div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">List Category</div>
-        <div class="panel-body">
-            <table class="table table-bordered table-hover">
-                <tr>
-                    <th>Name</th>
-
-                    <th style="width:100px;"></th>
-                </tr>
-                @foreach (var item in Model)
-                {
-
-                    if (item.ParentId == 0)
-                    {
-                        <tr>
-                            <td>@item.Name</td>
-
-                            <td style="text-align:center;">
-                                <a href="/Admin/Categories/Update/@item.Id">Edit</a>&nbsp;
-                                <a href="/Admin/Categories/Delete/@item.Id" onclick="return window.confirm('Are you sure?');">Delete</a>
-                            </td>
-                        </tr>
-                        List<ItemCategory> listParent = new List<ItemCategory>();
-                        foreach (var itemParent in Model)
-                        {
-                            if (itemParent.ParentId == item.Id)
-                            {
-                                listParent.Add(itemParent);
-                            }
-                        }
-                        foreach (ItemCategory itemSub in listParent)
-                        {
+            <div class="col-md-12">
+                <div style="margin-bottom:5px;">
+                    <a href="/Admin/Categories/Create" class="btn btn-primary">Add Category</a>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">List Category</div>
+                    <div class="panel-body">
+                        <table class="table table-bordered table-hover">
                             <tr>
-                                <td style="padding-left:30px;">@itemSub.Name</td>
+                                <th>Name</th>
 
-                                <td style="text-align:center;">
-                                    <a href="/Admin/Categories/Update/@itemSub.Id">Edit</a>&nbsp;
-                                    <a href="/Admin/Categories/Delete/@itemSub.Id" onclick="return window.confirm('Are you sure?');">Delete</a>
-                                </td>
+                                <th style="width:100px;"></th>
                             </tr>
 
-                        }
-                    }
-                   
-                }
+                            @foreach(var item in Model)
+                            {
+                            <tr>
+                                <td>@item.Name</td>
 
-            </table>
-            <style type="text/css">
-                .pagination {
-                    padding: 0px;
-                    margin: 0px;
-                }
-            </style>
-            @Html.PagedListPager((IPagedList)Model,p=>Url.Action("Index", new{page = p}))
+                                <td style="text-align:center;">
+                                    <a href="/Admin/Categories/Update/@item.Id">Edit</a>&nbsp;
+                                    <a href="/Admin/Categories/Delete/@item.Id"
+                                        onclick="return window.confirm('Are you sure?');">Delete</a>
+                                </td>
+                            </tr>
+                            @Html.Raw(listParent(item.Id))
+                             }
+                        </table>
+                        <style type="text/css">
+                            .pagination {
+                                padding: 0px;
+                                margin: 0px;
+                            }
+                        </style>
+                        @Html.PagedListPager((IPagedList)Model,p=>Url.Action("Index", new{page = p}))
 
-        </div>
-    </div>
-</div>
+                    </div>
+                </div>
+            </div>

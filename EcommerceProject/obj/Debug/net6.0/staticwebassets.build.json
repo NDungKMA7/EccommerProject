@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "axJ0y3kdj3glpO4A1Kah/b0PAxBln7bGRFWD16UtLww=",
+  "Hash": "lHodvZh1Td1obZEnPLQAQjStHAuq2phxMdMEVQOpfPY=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -12306,6 +12306,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Adv\\133318326498247207_Screenshot 2023-05-18 131442.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133318335831228784_Screenshot 2023-05-18 133922.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Adv/133318335831228784_Screenshot 2023-05-18 133922.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Adv\\133318335831228784_Screenshot 2023-05-18 133922.png"
     },
     {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133173136682521212_000000000010020041-senheiser-hd449--1-9-2-151336.jpg",

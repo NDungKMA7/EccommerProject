@@ -4,7 +4,10 @@
     Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
 
 }
-
+@{
+     List<ItemCategory> listCate = ViewBag.listCategories;
+       
+}
 <div class="col-md-12">
     <div class="panel panel-primary">
         <div class="panel-heading">Add edit category</div>
@@ -19,7 +22,7 @@
                         <text>@Model.Name</text>
 }" name="name" class="form-control" required>
 
-                      
+              
                     </div>
                 </div>
                 <!-- end rows -->
@@ -28,19 +31,17 @@
                     <div class="col-md-2">Parent</div>
                     <div class="col-md-10">
                         <select name="parent_id" class="form-control" style="width:300px;">
-                            <option value="0"></option>
-                           
-                            @foreach (ItemCategory item in ViewBag.listCategories)
+                            
+                            @foreach(var item in listCate)
                             {
-                                if(item.ParentId == 0)
+                                <option value="@item.Id"  @if(Model != null && Model.Id == item.Id)
                                 {
-                                    <option value="@item.Id">@item.Name</option>
-
-                                                                 
+                                    <text>selected</text>
                                 }
-
-                                
+                                >@item.Name</option>
                             }
+
+                          
                         </select>
 
                     </div>

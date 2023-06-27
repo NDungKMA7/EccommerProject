@@ -23,14 +23,14 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             int _RecordPerPage = 20;
             int _CurrentPage = page ?? 1;
-            List<ItemCategory> _ListRecord = await _context.Categories.OrderByDescending(item => item.Id).ToListAsync();
-           
+            List<ItemCategory> _ListRecord = await _context.Categories.Where(x => x.ParentId == 0).OrderByDescending(item => item.Id).ToListAsync();
+           ViewBag.ListCategories = await _context.Categories.ToListAsync();
             return View("Index", _ListRecord.ToPagedList(_CurrentPage, _RecordPerPage));
         }
         
         public async Task<IActionResult> Create()
         {
-            List<ItemCategory> _ListRecord = await _context.Categories.OrderByDescending(item => item.Id).ToListAsync();
+            List<ItemCategory> _ListRecord = await _context.Categories.ToListAsync();
             ViewBag.listCategories = _ListRecord;
             ViewBag.action = "/Admin/Categories/CreatePost";
             return View("CreateUpdate");
@@ -63,7 +63,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int? id)
         {
             int _id = id ?? 0;
-            List<ItemCategory> _ListRecord = await _context.Categories.OrderByDescending(item => item.Id).ToListAsync();
+            List<ItemCategory> _ListRecord = await _context.Categories.ToListAsync();
             ViewBag.listCategories = _ListRecord;
             ItemCategory record = await _context.Categories.Where(c => c.Id == _id).FirstOrDefaultAsync(); 
             ViewBag.action = "/Admin/Categories/UpdatePost/" + _id;
