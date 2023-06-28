@@ -49,35 +49,22 @@ namespace EcommerceProject.Areas.Admin.Controllers
             record.SubTitle = _SubTitle;
             record.Info = _Info;
             record.Link = _Link;
-
             string _FileName = "";
-            try
-            {
-                _FileName = Request.Form.Files[0].FileName;
-            }
-            catch {; }
-            if (!String.IsNullOrEmpty(_FileName))
+            if (Request.Form.Files.Count > 0)
             {
 
-                if (record.Photo != null && System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Slides", record.Photo)))
-                {
-                    System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Slides", record.Photo));
-                }
-
-                var timestap = DateTime.Now.ToFileTime();
-                _FileName = timestap + "_" + _FileName;
-
+                var file = Request.Form.Files[0];
+                var timestamp = DateTime.Now.ToFileTime();
+                _FileName = timestamp + "_" + file.FileName;
                 string _Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Slides", _FileName);
-
                 using (var stream = new FileStream(_Path, FileMode.Create))
                 {
-                    Request.Form.Files[0].CopyTo(stream);
+                    file.CopyTo(stream);
                 }
-
                 record.Photo = _FileName;
-                _context.Slides.Add(record);
-                await _context.SaveChangesAsync();
             }
+            _context.Slides.Add(record);
+            await _context.SaveChangesAsync();
             return Redirect("/Admin/Slides");
         }
         
@@ -133,32 +120,26 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 record.Info = _Info;
                 record.Link = _Link;
 
+           
                 string _FileName = "";
-                try
+                if (Request.Form.Files.Count > 0)
                 {
-                    _FileName = Request.Form.Files[0].FileName;
-                }
-                catch {; }
-                if (!String.IsNullOrEmpty(_FileName))
-                {
-                  
+                    var file = Request.Form.Files[0];
                     if (record.Photo != null && System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Slides", record.Photo)))
                     {
-                        System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Slides", record.Photo));
+                        string oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Slides", record.Photo);
+                        System.IO.File.Delete(oldFilePath);
                     }
-                  
-                    var timestap = DateTime.Now.ToFileTime();
-                    _FileName = timestap + "_" + _FileName;
-                    
+                    var timestamp = DateTime.Now.ToFileTime();
+                    _FileName = timestamp + "_" + file.FileName;
                     string _Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Slides", _FileName);
-                    
                     using (var stream = new FileStream(_Path, FileMode.Create))
                     {
-                        Request.Form.Files[0].CopyTo(stream);
+                        file.CopyTo(stream);
                     }
-                  
                     record.Photo = _FileName;
                 }
+              
                 await _context.SaveChangesAsync();
             }
             else

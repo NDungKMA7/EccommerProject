@@ -30,7 +30,7 @@
         List<ItemTag> TagsList = ViewBag.Tags;
         @foreach (var TagProduct in ListTagProducts.Where(cp => cp.ProductId == _ProductId))
         {
-            var Tag = TagsList.FirstOrDefault(c => c.Id == TagProduct.Id);
+            var Tag = TagsList.Where(item => item.Id == TagProduct.TagId).FirstOrDefault();
             if (Tag != null)
             {
                str += "<div>" + Tag.Name + "</div>";

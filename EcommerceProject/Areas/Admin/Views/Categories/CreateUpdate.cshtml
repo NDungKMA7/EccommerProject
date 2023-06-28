@@ -6,7 +6,7 @@
 }
 @{
      List<ItemCategory> listCate = ViewBag.listCategories;
-       
+    
 }
 <div class="col-md-12">
     <div class="panel panel-primary">
@@ -31,10 +31,11 @@
                     <div class="col-md-2">Parent</div>
                     <div class="col-md-10">
                         <select name="parent_id" class="form-control" style="width:300px;">
-                            
+                             <option value="0"></option>
                             @foreach(var item in listCate)
                             {
-                                <option value="@item.Id"  @if(Model != null && Model.Id == item.Id)
+                               
+                                <option value="@item.Id"  @if(Model != null && Model.ParentId == item.Id)
                                 {
                                     <text>selected</text>
                                 }
@@ -54,7 +55,7 @@
                         <input type="checkbox" name="displayHomePage" id="displayHomePage" @if (Model != null && Model.DisplayHomePage == 1)
                         {
                             <text>checked</text>
-                        }> <label for="displayHomePage">displayHomePage</label>
+                        }> <label for="displayHomePage"></label>
                     </div>
                 </div>
                 <!-- end rows -->

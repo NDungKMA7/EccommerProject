@@ -10,9 +10,9 @@
     List<ItemCategory> categoriesList = ViewBag.Categories;
 }
 @functions{
-   public List<ItemCategory> ListSubCategories( List<ItemCategory> categoriesList,int _CategoryId)
+   public List<ItemCategory> ListSubCategories( List<ItemCategory> categoriesListsm,int _CategoryId)
     {
-        List<ItemCategory> list_categories = categoriesList.Where(item => item.ParentId == _CategoryId).OrderByDescending(item => item.Id).ToList();
+        List<ItemCategory> list_categories = categoriesListsm.Where(item => item.ParentId == _CategoryId).OrderByDescending(item => item.Id).ToList();
         return list_categories;
     }
     
@@ -40,7 +40,7 @@
     <div class="panel panel-primary">
         <div class="panel-heading">Add edit product</div>
         <div class="panel-body">
-            <!-- muốn upload file thì phải đặt thuộc tính này vào trong thẻ form: enctype="multipart/form-data" -->
+           
             <form method="post" enctype="multipart/form-data" action="@ViewBag.action">
                 <!-- rows -->
                 <div class="row" style="margin-top:5px;">
@@ -55,7 +55,7 @@
                     <div class="col-md-2">Categories</div>
                     <div class="col-md-10" style="height:150px; overflow:scroll;">
                         <table class="table">
-                            @foreach (var item in categoriesList)
+                            @foreach (var item in categoriesList.Where(x => x.ParentId == 0))
                             {
                                 <tr>
                                     <td>

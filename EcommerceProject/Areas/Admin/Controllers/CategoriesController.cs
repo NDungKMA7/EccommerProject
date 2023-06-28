@@ -30,7 +30,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
         
         public async Task<IActionResult> Create()
         {
-            List<ItemCategory> _ListRecord = await _context.Categories.ToListAsync();
+            List<ItemCategory> _ListRecord = await _context.Categories.Where(x => x.ParentId == 0).OrderByDescending(item => item.Id).ToListAsync();
             ViewBag.listCategories = _ListRecord;
             ViewBag.action = "/Admin/Categories/CreatePost";
             return View("CreateUpdate");
@@ -39,7 +39,8 @@ namespace EcommerceProject.Areas.Admin.Controllers
         public async Task<IActionResult> CreatePost(IFormCollection fc)
         {
             string _name = fc["name"].ToString().Trim();
-            int _parent_id = Convert.ToInt32(fc["parent_id"].ToString().Trim()) ;
+         
+            int _parent_id = fc["parent_id"].ToString().Trim() == "" ? 0 : Convert.ToInt32(fc["parent_id"].ToString().Trim());
             int _displayHomePage = fc["displayHomePage"] != "" && fc["displayHomePage"] == "on" ? 1 : 0;
             ItemCategory item = new ItemCategory();
             item.Name = _name;
@@ -63,7 +64,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int? id)
         {
             int _id = id ?? 0;
-            List<ItemCategory> _ListRecord = await _context.Categories.ToListAsync();
+            List<ItemCategory> _ListRecord = await _context.Categories.Where(x => x.ParentId == 0).OrderByDescending(item => item.Id).ToListAsync();
             ViewBag.listCategories = _ListRecord;
             ItemCategory record = await _context.Categories.Where(c => c.Id == _id).FirstOrDefaultAsync(); 
             ViewBag.action = "/Admin/Categories/UpdatePost/" + _id;
@@ -74,7 +75,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             int _id = id ?? 0;
             string _name = fc["name"].ToString().Trim();
-            int _parent_id = Convert.ToInt32(fc["parent_id"].ToString().Trim());
+            int _parent_id = fc["parent_id"].ToString().Trim() == "" ? 0 : Convert.ToInt32(fc["parent_id"].ToString().Trim());
             int _displayHomePage = fc["displayHomePage"] != "" && fc["displayHomePage"] == "on" ? 1 : 0;
             var item = await _context.Categories.FirstOrDefaultAsync(c => c.Id == _id);
             if (item != null)

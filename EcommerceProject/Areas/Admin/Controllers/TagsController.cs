@@ -83,7 +83,8 @@ namespace EcommerceProject.Areas.Admin.Controllers
  
                 await _context.SaveChangesAsync();
             }
-            return Redirect("/Admin/Tags");
+            
+            return RedirectToAction("Index");
         }
     }
 }
