@@ -1,81 +1,63 @@
 ﻿@{
-    //load file layout vao day
-    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
 }
-
-<div class="col-md-12">
-    <div class="panel panel-primary">
-        <div class="panel-heading">Add edit slide</div>
-        <div class="panel-body">
-
-            <form method="post"  action="@ViewBag.action" enctype="multipart/form-data">
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Name</div>
-                    <div class="col-md-10">
-                        <input type="text" value="@if (Model != null) {
-                        <text>@Model.Name</text>
-                        }" name="Name" class="form-control" required>
-                    </div>
+<!-- Content wrapper -->
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="col-xxl">
+            <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">Add & Edit Form </h5>
                 </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Title</div>
-                    <div class="col-md-10">
-                        <input type="text" value="@if (Model != null) {
-                        <text>@Model.Title</text>
-                        }" name="Title" class="form-control" required>
-                    </div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data" action="@ViewBag.action">
+                        <div class=" mb-3">
+                            <label for="defaultFormControlInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="defaultFormControlInput"
+                                aria-describedby="defaultFormControlHelp" name="Name" required value="@if (Model != null) {
+                            <text>@Model.Name</text>
+                            }" />
+                        </div>
+                        <div class="  mb-3">
+                            <label for="Title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="Title" aria-describedby="defaultFormControlHelp"
+                                name="Title" required value="@if (Model != null) {
+                            <text>@Model.Title</text>
+                            }" />
+                        </div>
+                        <div class="  mb-3">
+                            <label for="SubTitle" class="form-label">Sub Title</label>
+                            <input type="text" class="form-control" id="SubTitle"
+                                aria-describedby="defaultFormControlHelp" name="SubTitle" required value="@if (Model != null) {
+                            <text>@Model.SubTitle</text>
+                            }" />
+                        </div>
+                        <div class="  mb-3">
+                            <label for="Info" class="form-label">Info</label>
+                            <input type="text" class="form-control" id="Info" aria-describedby="defaultFormControlHelp"
+                                name="Info" required value="@if (Model != null) {
+                            <text>@Model.Info</text>
+                            }" />
+                        </div>
+                        <div class="  mb-3">
+                            <label for="Link" class="form-label">Link</label>
+                            <input type="url" class="form-control" id="Link" aria-describedby="defaultFormControlHelp"
+                                name="Link" required value="@if (Model != null) {
+                            <text>@Model.Link</text>
+                            }" />
+                        </div>
+                        <div class=" mb-3">
+                            <label for="formFileMultiple" class="form-label">Multiple files</label>
+                            <input class="form-control" type="file" id="formFileMultiple" name="Photo" multiple />
+                        </div>
+                        <div class=" justify-content-end">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Sub Title</div>
-                    <div class="col-md-10">
-                        <input type="text" value="@if (Model != null) {
-                        <text>@Model.SubTitle</text>
-                        }" name="SubTitle" class="form-control" required>
-                    </div>
-                </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Info</div>
-                    <div class="col-md-10">
-                        <input type="text" value="@if (Model != null) {
-                        <text>@Model.Info</text>
-                        }" name="Info" class="form-control" required>
-                    </div>
-                </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Link</div>
-                    <div class="col-md-10">
-                        <input type="url" value="@if (Model != null) {
-                        <text>@Model.Link</text>
-                        }" name="Link" class="form-control" required>
-                    </div>
-                </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Photo</div>
-                    <div class="col-md-10">
-                        <input type="file" name="Photo" />
-                    </div>
-                </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10">
-                        <input type="submit" value="Process" class="btn btn-primary">
-                    </div>
-                </div>
-                <!-- end rows -->
-            </form>
+            </div>
         </div>
     </div>
 </div>

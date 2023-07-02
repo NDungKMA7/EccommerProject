@@ -19,15 +19,15 @@ namespace EcommerceProject.Areas.Admin.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(int? page)
+        public  IActionResult Index()
         {
-            int _RecordPerPage = 20;
-            int _CurrentPage = page ?? 1;
-            List<ItemCategory> _ListRecord = await _context.Categories.Where(x => x.ParentId == 0).OrderByDescending(item => item.Id).ToListAsync();
-           ViewBag.ListCategories = await _context.Categories.ToListAsync();
-            return View("Index", _ListRecord.ToPagedList(_CurrentPage, _RecordPerPage));
+            return View("Index");
         }
-        
+        public async Task<List<ItemCategory>> GetListRecord()
+        {
+            return await _context.Categories.OrderByDescending(item => item.Id).ToListAsync();
+        }
+
         public async Task<IActionResult> Create()
         {
             List<ItemCategory> _ListRecord = await _context.Categories.Where(x => x.ParentId == 0).OrderByDescending(item => item.Id).ToListAsync();
@@ -57,7 +57,11 @@ namespace EcommerceProject.Areas.Admin.Controllers
             if (item != null)
             {
                  _context.Categories.Remove(item);
-                await _context.SaveChangesAsync();  
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
             }
             return Redirect("/Admin/Categories");
         }
@@ -67,8 +71,16 @@ namespace EcommerceProject.Areas.Admin.Controllers
             List<ItemCategory> _ListRecord = await _context.Categories.Where(x => x.ParentId == 0).OrderByDescending(item => item.Id).ToListAsync();
             ViewBag.listCategories = _ListRecord;
             ItemCategory record = await _context.Categories.Where(c => c.Id == _id).FirstOrDefaultAsync(); 
-            ViewBag.action = "/Admin/Categories/UpdatePost/" + _id;
-            return View("CreateUpdate", record);
+            if (record != null)
+            {
+                ViewBag.action = "/Admin/Categories/UpdatePost/" + _id;
+                return View("CreateUpdate", record);
+            }
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
+            }
+            
         }
         [HttpPost]
         public async Task<IActionResult> UpdatePost(int? id, IFormCollection fc)
@@ -83,9 +95,14 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 item.DisplayHomePage = _displayHomePage;
                 item.Name = _name;
                 item.ParentId = _parent_id;
-                await _context.SaveChangesAsync();  
+                await _context.SaveChangesAsync();
+                return Redirect("/Admin/Categories");
             }
-            return Redirect("/Admin/Categories");
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
+            }
+           
         }
     }
 }

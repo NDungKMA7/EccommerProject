@@ -37,7 +37,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
             ItemProduct record = await _context.Products.Where(item => item.Id == _id).FirstOrDefaultAsync();
             if(record == null)
             {
-                return NotFound();
+                return Redirect("/Admin/Home/ErrorPage");
             }
             ViewBag.Categories = await _context.Categories.ToListAsync();
             ViewBag.Tags = await _context.Tags.ToListAsync();
@@ -123,9 +123,13 @@ namespace EcommerceProject.Areas.Admin.Controllers
                     _context.TagsProducts.Add(record_tag_product);
                     await _context.SaveChangesAsync();
                 }
-
+                return RedirectToAction("Index");
             }
-            return RedirectToAction("Index");
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
+            }
+            
         }
         public async Task<IActionResult> Create()
         {
@@ -208,11 +212,14 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 _context.Products.Remove(record);
                 await _context.SaveChangesAsync();
                 System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", record.Photo));
-
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
             }
            
-      
-            return RedirectToAction("Index");
+           
         }
     }
 }

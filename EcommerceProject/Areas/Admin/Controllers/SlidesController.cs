@@ -18,15 +18,14 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(int? page)
+        public IActionResult Index()
         {
-            int _RecordPerPage = 20;
-            int _CurrentPage = page ?? 1;
-            List<ItemSlide> _ListRecord = await _context.Slides.OrderByDescending(item => item.Id).ToListAsync();
-
-            return View("Index", _ListRecord.ToPagedList(_CurrentPage, _RecordPerPage));
+            return View("Index");
         }
-
+        public async Task<List<ItemSlide>> GetListRecord()
+        {
+            return await _context.Slides.OrderByDescending(item => item.Id).ToListAsync();
+        }
         public IActionResult Create()
         {
 
@@ -80,7 +79,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để xóa.";
+                return Redirect("/Admin/Home/ErrorPage");
             }
             return Redirect("/Admin/Slides");
         }
@@ -95,9 +94,9 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để cập nhập";
+                return Redirect("/Admin/Home/ErrorPage");
             }
-            return Redirect("/Admin/Slides");
+           
         }
            
            
@@ -144,7 +143,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để cập nhập";
+                return Redirect("/Admin/Home/ErrorPage");
             }
             return Redirect("/Admin/Slides");
         }

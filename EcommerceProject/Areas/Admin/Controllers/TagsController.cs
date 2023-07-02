@@ -17,14 +17,14 @@ namespace EcommerceProject.Areas.Admin.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(int? page)
+        public IActionResult Index()
         {
-            int _RecordPerPage = 20;
-            int _CurrentPage = page ?? 1;
-            List<ItemTag> _ListRecord = await _context.Tags.OrderByDescending(item => item.Id).ToListAsync();
-            return View("Index", _ListRecord.ToPagedList(_CurrentPage, _RecordPerPage));
+            return View("Index");
         }
-
+        public async Task<List<ItemTag>> GetListRecord()
+        {
+            return await _context.Tags.OrderByDescending(item => item.Id).ToListAsync();
+        }
         public  IActionResult Create()
         {
             ViewBag.action = "/Admin/Tags/CreatePost";
@@ -51,7 +51,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để xóa.";
+                return Redirect("/Admin/Home/ErrorPage");
             }
             return Redirect("/Admin/Tags");
         }
@@ -65,9 +65,9 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để cập nhập";
+                return Redirect("/Admin/Home/ErrorPage");
             }
-           return RedirectToAction("Index");
+           
         }
         [HttpPost]
         public async Task<IActionResult> UpdatePost(int? id, IFormCollection fc)
@@ -82,6 +82,10 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 item.Name = _name;
  
                 await _context.SaveChangesAsync();
+            }
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
             }
             
             return RedirectToAction("Index");

@@ -1,75 +1,34 @@
 ﻿@{
-    //load file Layout.cshtml vao day
-    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
 }
-@* de phan trang thi phai using cac doi tuong sau *@
-@using X.PagedList
-@using X.PagedList.Mvc.Core
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <!-- Responsive Table -->
+        <div class="card">
+            <h5 class="card-header ">Advs Table</h5>
+            <div class="table-responsive text-nowrap p-3">
+              <a href="/Admin/Advs/Create" class="btn btn-primary mb-3">
+                              <span class="tf-icons bx  bx-list-plus"></span>&nbsp; Create
+                            </a>
+                <table id="AdvTable"  class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr class="text-nowrap">
+                        
+                            <th>Name</th>
+                            <th>Photo</th>
+                            <th>Position</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tb-body" class="table-border-bottom-0">
 
-@using System.IO
+                     
 
-<div class="col-md-12">
-    <div style="margin-bottom:5px;">
-        <a href="/Admin/Advs/Create" class="btn btn-primary">Add adv</a>
-    </div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">List adv</div>
-        <div class="panel-body">
-            <table class="table table-bordered table-hover">
-                <tr>
-                    <th style="width:100px;">Photo</th>
-                    <th>Name</th>
-                    <th style="width:150px;">Position</th>
-                    <th style="width:100px;"></th>
-                </tr>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            
-                            @if (item.Photo != null && File.Exists(Directory.GetCurrentDirectory() + "\\wwwroot\\Upload\\Adv\\" + item.Photo))
-                            {
-                                <img src="~/Upload/Adv/@item.Photo" style="width:100px;" />
-                            }
-                        </td>
-                        <td>@item.Name</td>
-                        <td>
-                            @if (item.Position == 1)
-                            {
-                                <text>Trái (Dưới slide show)</text>
-                            }
-                            @if (item.Position == 2)
-                            {
-                                <text>Phải (Dưới slide show)</text>
-                            }
-                            @if (item.Position == 3)
-                            {
-                                <text>Trang sản phẩm - Banner</text>
-                            }
-                            @if (item.Position == 4)
-                            {
-                                <text>Trang sản phẩm - Dưới TAG</text>
-                            }
-                            @if (item.Position == 5)
-                            {
-                                <text>Trang sản phẩm - Dưới Popular products</text>
-                            }
-                        </td>
-                        <td style="text-align:center;">
-                            <a href="/Admin/Advs/Update/@item.Id">Edit</a>&nbsp;
-                            <a href="/Admin/Advs/Delete/@item.Id" onclick="return window.confirm('Are you sure?');">Delete</a>
-                        </td>
-                    </tr>
-                }
-            </table>
-            <style type="text/css">
-                .pagination {
-                    padding: 0px;
-                    margin: 0px;
-                }
-            </style>
-            @* ham sau se thuc hien viec hien thi phan trang *@
-            @Html.PagedListPager((IPagedList)Model, p => Url.Action("Index", new { page = p }))
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <!--/ Responsive Table -->
     </div>
 </div>
+<script src="~/admin/js/advsadmin.js"></script>
