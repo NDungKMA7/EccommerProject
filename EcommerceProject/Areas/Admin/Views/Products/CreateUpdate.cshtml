@@ -1,0 +1,136 @@
+﻿@using EcommerceProject.Models.Mapping;
+@{
+    //load file Layout.cshtml vao day
+    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+}
+@{
+    List<ItemTag> TagsList = ViewBag.Tags;
+    List<ItemCategoriesProducts> categoriesProducts = ViewBag.ListCategoriesProducts;
+    List<ItemTagsProducts> tagsProducts = ViewBag.ListTagProducts;
+    List<ItemCategory> categoriesList = ViewBag.Categories;
+}
+@functions{
+   public List<ItemCategory> ListSubCategories( List<ItemCategory> categoriesListsm,int _CategoryId)
+    {
+        List<ItemCategory> list_categories = categoriesListsm.Where(item => item.ParentId == _CategoryId).OrderByDescending(item => item.Id).ToList();
+        return list_categories;
+    }
+    
+    public bool CheckCategoriesProductsRecord(  List<ItemCategoriesProducts> categoriesProductsm ,int _CategoryId, int _ProductId)
+    {
+        ItemCategoriesProducts record = categoriesProductsm.Where(item => item.CategoryId == _CategoryId && item.ProductId == _ProductId).FirstOrDefault();
+        if(record != null)
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    public bool CheckTagsProductsRecord(List<ItemTagsProducts> tagsProductsm, int _TagId, int _ProductId)
+    {
+        ItemTagsProducts record = tagsProductsm.Where(item => item.TagId == _TagId && item.ProductId == _ProductId).FirstOrDefault();
+        if (record != null)
+        {
+            return true;
+        }
+        return false;
+    }
+}
+ <div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="col-xxl">
+            <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">Add & Edit Form</h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="@ViewBag.action" enctype="multipart/form-data">
+                        <div class=" mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" name="name" required value="@if(Model != null){
+                    <text>@Model.Name</text>
+}" />
+                        </div>
+                        <div class="  mb-3">
+                            <small class="text-light fw-semibold">Categories</small>
+                            @foreach(var item in categoriesList.Where(x => x.ParentId == 0))
+                            {
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" value="@item.Id"
+                                    name="category_@item.Id" id="category_@item.Id" @if(Model!=null &&
+                                    CheckCategoriesProductsRecord(categoriesProducts,item.Id,Model.Id)){
+                                    <text>checked</text> }/>
+                                <label class="form-check-label" for="category_@item.Id"> @item.Name </label>
+                            </div>
+                            List<ItemCategory> list_sub_categories = ListSubCategories(categoriesList, item.Id);
+                                foreach (var itemSub in list_sub_categories)
+                                {
+                                <div class="form-check mt-3" style="padding-left:30px;">
+                                    <input class="form-check-input" type="checkbox" value="@itemSub.Id"
+                                        name="category_@itemSub.Id" id="category_@itemSub.Id" @if(Model!=null &&
+                                        CheckCategoriesProductsRecord(categoriesProducts,itemSub.Id,Model.Id)){
+                                        <text>checked</text> }/>
+                                    <label class="form-check-label" for="category_@itemSub.Id"> @itemSub.Name </label>
+                                </div>
+                                }
+                                }
+                        </div>
+                        <div class="  mb-3">
+                            <label for="tags" class="form-label">Tags</label>
+                            <select class="form-select" name="tags" multiple id="tags">
+                                @foreach(var item_tag in TagsList)
+                                {
+                                <option @if(Model!=null && CheckTagsProductsRecord(tagsProducts,item_tag.Id,Model.Id)){
+                                    <text>selected</text> } value="@item_tag.Id">@item_tag.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input id="price" type="number"
+                                value="@if(Model!=null){<text>@Model.Price</text>}else{<text>0</text>}" name="price"
+                                class="form-control" required>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="discount" class="form-label">Discount</label>
+                            <input type="number" min="0" max="100"
+                                value="@if(Model!=null){<text>@Model.Discount</text>}else{<text>0</text>}"
+                                name="discount" class="form-control" required>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="formFileMultiple" class="form-label">Multiple files</label>
+                            <input class="form-control" type="file" id="formFileMultiple" name="Photo" multiple />
+                        </div>
+                        <div class="form-check mt-3">
+                            <label class="form-check-label" for="hot"> Hot </label>
+                            <input class="form-check-input" type="checkbox" name="hot" id="hot" @if(Model !=null &&
+                                Model.Hot==1){<text>checked</text>}/>
+
+                        </div>
+                        <div class=" mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" rows="3"
+                                name="description">@if(Model!=null){<text>@Model.Description</text>}</textarea>
+                            <script language="javascript">
+                                CKEDITOR.replace("description");
+                            </script>
+                        </div>
+                        <div class=" mb-3">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea class="form-control" id="content" rows="3"
+                                name="content">@if(Model!=null){<text>@Model.Content</text>}</textarea>
+                            <script language="javascript">
+                                CKEDITOR.replace("content");
+                            </script>
+                        </div>
+                        <div class=" justify-content-end">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

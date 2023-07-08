@@ -26,5 +26,10 @@ namespace EcommerceProject.Areas.Admin.Controllers
             var roles = await _userManager.GetRolesAsync(user);
             return View("Index", roles);
         }
+
+        public IActionResult ErrorPage()
+        {
+            return View("miscError");
+        }
     }
 }

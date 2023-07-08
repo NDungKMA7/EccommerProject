@@ -1,50 +1,37 @@
 ﻿@{
-    //load file Layout.cshtml vao day
-    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
 }
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <!-- Responsive Table -->
+        <div class="card">
+            <h5 class="card-header ">Slides Table</h5>
+            <div class="table-responsive text-nowrap p-3">
+              <a href="/Admin/Slides/Create" class="btn btn-primary mb-3">
+                              <span class="tf-icons bx  bx-list-plus"></span>&nbsp; Create
+                            </a>
+                <table id="SlidesTable"  class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr class="text-nowrap">
+                        
+                            <th>Name</th>
+                            <th>Photo</th>
+                            <th>Title</th>
+                            <th>SubTitle</th>
+                            <th>Info</th>
+                            <th>Link</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tb-body" class="table-border-bottom-0">
 
-@using X.PagedList
-@using X.PagedList.Mvc.Core
+                     
 
-<div class="col-md-12">
-    <div style="margin-bottom:5px;">
-        <a href="/Admin/Slides/Create" class="btn btn-primary">Add slide</a>
-    </div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">List slide</div>
-        <div class="panel-body">
-            <table class="table table-bordered table-hover">
-                <tr>
-                    <th style="width:100px;">Photo</th>
-                    <th>Name</th>
-                    <th style="width:100px;"></th>
-                </tr>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-
-                            @if (item.Photo != null && File.Exists(Directory.GetCurrentDirectory() + "\\wwwroot\\Upload\\Slides\\" + item.Photo))
-                            {
-                                <img src="~/Upload/Slides/@item.Photo" style="width:100px;" />
-                            }
-                        </td>
-                        <td>@item.Name</td>
-                        <td style="text-align:center;">
-                            <a href="/Admin/Slides/Update/@item.Id">Edit</a>&nbsp;
-                            <a href="/Admin/Slides/Delete/@item.Id" onclick="return window.confirm('Are you sure?');">Delete</a>
-                        </td>
-                    </tr>
-                }
-            </table>
-            <style type="text/css">
-                .pagination {
-                    padding: 0px;
-                    margin: 0px;
-                }
-            </style>
-           
-            @Html.PagedListPager((IPagedList)Model, p => Url.Action("Index", new { page = p }))
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <!--/ Responsive Table -->
     </div>
 </div>
+<script src="~/admin/js/slidesadmin.js"></script>
