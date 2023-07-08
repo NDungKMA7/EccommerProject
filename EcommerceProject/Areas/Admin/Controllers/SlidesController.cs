@@ -3,7 +3,6 @@ using EcommerceProject.Models.Mapping;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using X.PagedList;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 

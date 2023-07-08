@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o0384UC12uQeWChtZPqZA6lQ2rrqlOk/rBEhPDm4/pM=",
+  "Hash": "LJfy/JNGoVb32RTASK6fS5sbobURCy805CzIi5E1ACc=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -9076,6 +9076,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\js\\categoriesAdmin.js"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\ListArticle.js",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "admin/js/ListArticle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\ListArticle.js"
     },
     {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\productAdmin.js",

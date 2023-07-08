@@ -2173,6 +2173,10 @@
       "PackagePath": "staticwebassets\\admin\\ckeditor\\vendor\\promise.js"
     },
     {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\ListArticle.js",
+      "PackagePath": "staticwebassets\\admin\\js\\ListArticle.js"
+    },
+    {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\advsAdmin.js",
       "PackagePath": "staticwebassets\\admin\\js\\advsAdmin.js"
     },

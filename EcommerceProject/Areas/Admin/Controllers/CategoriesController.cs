@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using X.PagedList;
+
 
 namespace EcommerceProject.Areas.Admin.Controllers
 {

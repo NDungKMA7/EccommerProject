@@ -308,12 +308,8 @@ E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\EcommerceProject.pdb
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Azure.Core.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Azure.Identity.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Humanizer.dll
-E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\JetBrains.Annotations.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\MessagePack.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\MessagePack.Annotations.dll
-E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll
-E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
-E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -402,8 +398,6 @@ E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\System.Security.Permiss
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\System.Text.Json.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\System.Windows.Extensions.dll
-E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\X.PagedList.dll
-E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
 E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -578,7 +572,6 @@ E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.Genera
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.AssemblyInfoInputs.cache
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.AssemblyInfo.cs
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.csproj.CoreCompileInputs.cache
-E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.MvcApplicationPartsAssemblyInfo.cs
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.MvcApplicationPartsAssemblyInfo.cache
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.RazorAssemblyInfo.cache
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.RazorAssemblyInfo.cs

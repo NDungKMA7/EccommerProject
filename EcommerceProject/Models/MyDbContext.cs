@@ -17,6 +17,6 @@ namespace EcommerceProject.Models
         public DbSet<ItemNew> News { get; set; }
         public DbSet<ItemAdv> Adv { get; set; }
         public DbSet<ItemSlide> Slides { get; set; }
-        
+        public DbSet<ItemListArticle> ListArticle { get; set; }
     }
 }
