@@ -197,6 +197,9 @@ namespace EcommerceProject.Migrations
                     b.Property<int>("Hot")
                         .HasColumnType("int");
 
+                    b.Property<int>("ListArticleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
