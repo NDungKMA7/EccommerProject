@@ -7,16 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\Upload\NewFolder\**" />
-    <Content Remove="wwwroot\Upload\NewFolder\**" />
-    <EmbeddedResource Remove="wwwroot\Upload\NewFolder\**" />
-    <None Remove="wwwroot\Upload\NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Attributes\" />
+    <Folder Include="wwwroot\Upload\News\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -13,5 +13,7 @@ namespace EcommerceProject.Models.Mapping
         public string Content { get; set; } = string.Empty;
         public int Hot { get; set; }
         public string Photo { get; set; } = string.Empty;
+
+        public int ListArticleId { get; set; }  
     }
 }

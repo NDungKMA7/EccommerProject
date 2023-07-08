@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LJfy/JNGoVb32RTASK6fS5sbobURCy805CzIi5E1ACc=",
+  "Hash": "MhWmdA7v6XjQUPTBKMPT3wgUnqa52NHBzVPm3STWTr8=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -9095,6 +9095,23 @@
       "OriginalItemSpec": "wwwroot\\admin\\js\\ListArticle.js"
     },
     {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\newsAdmin.js",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "admin/js/newsAdmin.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\newsAdmin.js"
+    },
+    {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\productAdmin.js",
       "SourceId": "EcommerceProject",
       "SourceType": "Discovered",
@@ -9231,6 +9248,40 @@
       "OriginalItemSpec": "wwwroot\\Upload\\Adv\\133327778036969768_Screenshot 2023-05-18 105146.png"
     },
     {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\News\\133332838334094949_Screenshot 2023-05-18 133922.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/News/133332838334094949_Screenshot 2023-05-18 133922.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\News\\133332838334094949_Screenshot 2023-05-18 133922.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\News\\133332839098134131_Screenshot 2023-05-09 223114.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/News/133332839098134131_Screenshot 2023-05-09 223114.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\News\\133332839098134131_Screenshot 2023-05-09 223114.png"
+    },
+    {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133324439560333515_133196270822859689_size-banner-widget.jpg",
       "SourceId": "EcommerceProject",
       "SourceType": "Discovered",
@@ -9331,6 +9382,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Products\\133332644960295651_Screenshot 2023-05-22 232723.png"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133332827711835512_Screenshot 2023-05-18 105146.png",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "Upload/Products/133332827711835512_Screenshot 2023-05-18 105146.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Products\\133332827711835512_Screenshot 2023-05-18 105146.png"
     },
     {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133327809671584760_Screenshot 2023-05-18 133922.png",
