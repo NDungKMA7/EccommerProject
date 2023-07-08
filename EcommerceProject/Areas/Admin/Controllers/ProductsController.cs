@@ -33,8 +33,6 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 {
                     Id = product.Id,
                     Name = product.Name,
-                    Description = product.Description,
-                    Content = product.Content,
                     Discount = product.Discount,
                     Price = product.Price,
                     Hot = product.Hot,

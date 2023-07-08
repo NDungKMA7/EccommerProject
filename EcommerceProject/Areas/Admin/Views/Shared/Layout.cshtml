@@ -190,12 +190,19 @@
                     <li class="menu-item">
                         <a href="/Admin/Categories/Index" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-collection"></i>
-                            Categories
+                            List of products
                         </a>
                     </li>
                     }
                     @if (User.IsInRole("Admin") || User.IsInRole("Author"))
                         {
+                            <li class="menu-item">
+                        <a href="/Admin/ListArticle/Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-category"></i>
+                            
+                          List of articles
+                        </a>
+                    </li>
                             <!-- News -->
                     <li class="menu-item">
                         <a href="/Admin/News/Index" class="menu-link">
