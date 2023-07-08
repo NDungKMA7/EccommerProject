@@ -1,33 +1,36 @@
-﻿@{
-    //load file layout vao day
-    Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+﻿@using EcommerceProject.Models.Mapping;
+@{
+//Load file Layout.cshtml
+Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+
 }
 
-
-<div class="col-md-12">
-    <div class="panel panel-primary">
-        <div class="panel-heading">Add edit tag</div>
-        <div class="panel-body">
-            <form method="post" action="@ViewBag.action">
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2">Name</div>
-                    <div class="col-md-10">
-                        <input type="text" value="@if (Model != null) {
+    <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="col-xxl">
+                <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Add & Edit Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="@ViewBag.action">
+                            <div class=" mb-3">
+                                <label for="defaultFormControlInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="defaultFormControlInput"
+                                    aria-describedby="defaultFormControlHelp" name="name" required value="@if(Model != null){
                         <text>@Model.Name</text>
-                        }" name="name" class="form-control" required>
+}" />
+                            </div>
+                           
+           
+                            <div class=" justify-content-end">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <!-- end rows -->
-                <!-- rows -->
-                <div class="row" style="margin-top:5px;">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10">
-                        <input type="submit" value="Process" class="btn btn-primary">
-                    </div>
-                </div>
-                <!-- end rows -->
-            </form>
+            </div>
         </div>
     </div>
-</div>

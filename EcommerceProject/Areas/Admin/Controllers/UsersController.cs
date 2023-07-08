@@ -1,4 +1,5 @@
 ﻿using EcommerceProject.Models;
+using EcommerceProject.Models.Mapping;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -29,22 +30,23 @@ namespace EcommerceProject.Areas.Admin.Controllers
             this._signInManager = signInManager;
             this._roleManager = roleManager;
         }
-        public async Task<IActionResult> Index(int? page)
+        public IActionResult Index()
         {
-
-            int current_page = page ?? 1;
-
-            int record_per_page = 4;
-
-
+            return View("Index");
+        }
+        public async Task<List<ApplicationUser>> GetListRecord()
+        {
             var list_record = await _userManager.Users.ToListAsync();
-
-            return View("Index", list_record.ToPagedList(current_page, record_per_page));
+            return list_record;
         }
         public async Task<IActionResult> Update(string? id)
         {
             string _id = id ?? "";
             var user = await _userManager.FindByIdAsync(_id);
+            if (user == null)
+            {
+                return Redirect("/Admin/Home/ErrorPage");
+            }
             ViewBag.action = "/Admin/Users/UpdatePost/" + _id;
             return View("CreateUpdate", user);
         }
@@ -91,6 +93,10 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 {
                     ModelState.AddModelError("", error.Description);
                 }
+            }
+            else
+            {
+                return Redirect("/Admin/Home/ErrorPage");
             }
             ViewBag.action = "/Admin/Users/UpdatePost/" + _id;
             return View("CreateUpdate");
@@ -157,11 +163,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Home/ErrorPage");
             }
         }
     }

@@ -16,25 +16,24 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(int? page)
+        public IActionResult Index()
         {
-            int _RecordPerPage = 20;
-            int _CurrentPage = page ?? 1;
-            List<ItemAdv> _ListRecord = await _context.Adv.OrderByDescending(item => item.Id).ToListAsync();
-
-            return View("Index", _ListRecord.ToPagedList(_CurrentPage, _RecordPerPage));
+            return View("Index");
+        }
+        public async Task<List<ItemAdv>> GetListRecord()
+        {
+            return await _context.Adv.OrderByDescending(item => item.Id).ToListAsync();
         }
         public IActionResult Create()
         {
-
             ViewBag.action = "/Admin/Advs/CreatePost";
             return View("CreateUpdate");
-
         }
 
         [HttpPost]
         public async Task<IActionResult> CreatePost(IFormCollection fc)
         {
+
             string _Name = fc["Name"].ToString().Trim();
             int _Position = Convert.ToInt32(fc["Position"].ToString().Trim());
             ItemAdv record = new ItemAdv();
@@ -42,33 +41,21 @@ namespace EcommerceProject.Areas.Admin.Controllers
             record.Position = _Position;
 
             string _FileName = "";
-            try
-            {
-                _FileName = Request.Form.Files[0].FileName;
-            }
-            catch {; }
-            if (!String.IsNullOrEmpty(_FileName))
+            if (Request.Form.Files.Count > 0)
             {
 
-                if (record.Photo != null && System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Adv", record.Photo)))
-                {
-                    System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Adv", record.Photo));
-                }
-
-                var timestap = DateTime.Now.ToFileTime();
-                _FileName = timestap + "_" + _FileName;
-
+                var file = Request.Form.Files[0];
+                var timestamp = DateTime.Now.ToFileTime();
+                _FileName = timestamp + "_" + file.FileName;
                 string _Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Adv", _FileName);
-
                 using (var stream = new FileStream(_Path, FileMode.Create))
                 {
-                    Request.Form.Files[0].CopyTo(stream);
+                    file.CopyTo(stream);
                 }
-
                 record.Photo = _FileName;
-                _context.Adv.Add(record);
-                await _context.SaveChangesAsync();
             }
+            _context.Adv.Add(record);
+            await _context.SaveChangesAsync();
             return Redirect("/Admin/Advs");
         }
         public async Task<IActionResult> Delete(int? id)
@@ -79,10 +66,11 @@ namespace EcommerceProject.Areas.Admin.Controllers
             {
                 _context.Adv.Remove(item);
                 await _context.SaveChangesAsync();
+                System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Adv", item.Photo));
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để xóa.";
+                return Redirect("/Admin/Home/ErrorPage");
             }
             return Redirect("/Admin/Advs");
         }
@@ -97,9 +85,8 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để cập nhập";
+                return Redirect("/Admin/Home/ErrorPage");
             }
-            return Redirect("/Admin/Slides");
         }
 
 
@@ -117,36 +104,29 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 record.Position = _Position;
 
                 string _FileName = "";
-                try
+                if (Request.Form.Files.Count > 0)
                 {
-                    _FileName = Request.Form.Files[0].FileName;
-                }
-                catch {; }
-                if (!String.IsNullOrEmpty(_FileName))
-                {
-
+                    var file = Request.Form.Files[0];
                     if (record.Photo != null && System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Adv", record.Photo)))
                     {
-                        System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Adv", record.Photo));
+                        string oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Adv", record.Photo);
+                        System.IO.File.Delete(oldFilePath);
                     }
-
-                    var timestap = DateTime.Now.ToFileTime();
-                    _FileName = timestap + "_" + _FileName;
-
+                    var timestamp = DateTime.Now.ToFileTime();
+                    _FileName = timestamp + "_" + file.FileName;
                     string _Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Adv", _FileName);
-
                     using (var stream = new FileStream(_Path, FileMode.Create))
                     {
-                        Request.Form.Files[0].CopyTo(stream);
+                        file.CopyTo(stream);
                     }
-
                     record.Photo = _FileName;
                 }
+               
                 await _context.SaveChangesAsync();
             }
             else
             {
-                TempData["ErrorMessage"] = "Không tìm thấy mục để cập nhập";
+                return Redirect("/Admin/Home/ErrorPage");
             }
             return Redirect("/Admin/Advs");
         }

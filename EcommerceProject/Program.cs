@@ -19,15 +19,15 @@ builder.Services.AddAuthorization(options =>
  {
      options.AddPolicy("Admin", policy =>
      {
-         policy.RequireRole("admin");
+         policy.RequireRole("Admin");
      });
      options.AddPolicy("Author", policy =>
      {
-         policy.RequireRole("admin", "Author");
+         policy.RequireRole("Admin", "Author");
      });
      options.AddPolicy("Seller", policy =>
      {
-         policy.RequireRole("admin", "Seller");
+         policy.RequireRole("Admin", "Seller");
      });
  });
 var app = builder.Build();
