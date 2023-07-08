@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using X.PagedList;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
+using EcommerceProject.DTO;
+using System.Diagnostics;
 
 namespace EcommerceProject.Areas.Admin.Controllers
 {
@@ -19,18 +21,38 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(int? page)
+        public IActionResult Index()
         {
-            int _RecordPerPage = 20;
-            int _CurrentPage = page ?? 1;
-            List<ItemProduct> _ListRecord = await _context.Products.OrderByDescending(item => item.Id).ToListAsync();
-            ViewBag.ListCategoriesProducts = await _context.CategoriesProducts.ToListAsync();
-            ViewBag.ListTagProducts = await _context.TagsProducts.ToListAsync();
-            ViewBag.Categories = await _context.Categories.ToListAsync();
-            ViewBag.Tags = await _context.Tags.ToListAsync();
-          
-            return View("Index", _ListRecord.ToPagedList(_CurrentPage, _RecordPerPage));
+            return View("Index");
         }
+
+        public async Task<List<InfoProducts>> GetListProducts()
+        {
+            var products = await _context.Products
+                .OrderByDescending(item => item.Id)
+                .Select(product => new InfoProducts
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Content = product.Content,
+                    Discount = product.Discount,
+                    Price = product.Price,
+                    Hot = product.Hot,
+                    Photo = product.Photo,
+                    Categories = string.Join(", ", _context.CategoriesProducts
+                        .Where(cp => cp.ProductId == product.Id)
+                        .Join(_context.Categories, cp => cp.CategoryId, c => c.Id, (cp, c) => c.Name)),
+                    Tags = string.Join(", ", _context.TagsProducts
+                        .Where(tp => tp.ProductId == product.Id)
+                        .Join(_context.Tags, tp => tp.TagId, t => t.Id, (tp, t) => t.Name))
+                })
+                .ToListAsync();
+
+            return products;
+        }
+
+
 
         public async Task<IActionResult> Update(int? id) {
             int _id = id ?? 0;

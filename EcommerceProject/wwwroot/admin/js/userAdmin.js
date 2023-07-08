@@ -8,6 +8,7 @@
 
             $('#UsersTable').DataTable({
                 data: data,
+                pageLength: 10, 
                 columns: [
                     {
                         data: 'name',
@@ -19,7 +20,7 @@
                         data: 'email',
                         render: function (data, type, row) {
                             return '<strong>' + data + '</strong>';
-                        }
+                        }, orderable: false
                     },
                     {
                         data: 'id',
@@ -37,7 +38,7 @@
                                 '</div>' +
                                 '</div>';
                             return dropdownHtml;
-                        }
+                        }, orderable: false
                     }
                 ]
             });

@@ -9,6 +9,7 @@
 
             $('#AdvTable').DataTable({
                 data: data,
+                pageLength: 10, 
                 columns: [
                     {
                         data: 'name',
@@ -20,7 +21,8 @@
                         data: 'photo',
                         render: function (data, type, row) {
                             return '<img src="/Upload/Adv/' + data + '" style="width:100px;" />';
-                        }
+                        },
+                        orderable: false
                     },
                     {
                         data: 'position',
@@ -44,7 +46,8 @@
                                 };
                             }
 
-                        }
+                        },
+                        orderable: false
                     },
                     {
                         data: 'id',
@@ -62,7 +65,8 @@
                                 '</div>' +
                                 '</div>';
                             return dropdownHtml;
-                        }
+                        },
+                        orderable: false
                     }
                 ]
             });

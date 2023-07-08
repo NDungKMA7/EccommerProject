@@ -9,6 +9,7 @@
 
             $('#CategoriesTable').DataTable({
                 data: data,
+                pageLength: 10, 
                 columns: [
                     {
                         data: 'name',
@@ -32,7 +33,8 @@
                                 '</div>' +
                                 '</div>';
                             return dropdownHtml;
-                        }
+                        },
+                        orderable: false
                     }
                 ]
             });

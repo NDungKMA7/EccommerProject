@@ -1,5 +1,6 @@
 ﻿using EcommerceProject.DTO;
 using EcommerceProject.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -56,12 +57,13 @@ namespace EcommerceProject.Areas.Admin.Controllers
             }
             return RedirectToAction("Login");
         }
-
+        [Authorize(Policy = "Admin")]
         public IActionResult Registration()
         {
             return View("Registration");
         }
         [HttpPost]
+        [Authorize(Policy = "Admin")]
         public async Task<IActionResult> RegistrationPost(IFormCollection fc)
         {
             string errorMessage = "";

@@ -1,13 +1,12 @@
 ﻿$(document).ready(function () {
     $.noConflict();
 
-    axios.get('/Admin/Slides/GetListRecord')
+    axios.get('/Admin/Products/GetListProducts')
         .then(function (response) {
 
             var data = response.data;
 
-
-            $('#SlidesTable').DataTable({
+            $('#ProductsTable').DataTable({
                 data: data,
                 pageLength: 10, 
                 columns: [
@@ -20,31 +19,38 @@
                     {
                         data: 'photo',
                         render: function (data, type, row) {
-                            return '<img src="/Upload/Slides/' + data + '" style="width:100px;" />';
-                        }, orderable: false
+                            return '<img src="/Upload/Products/' + data + '" style="width:100px;" />';
+                        },
+                        orderable: false
                     },
                     {
-                        data: 'title',
-                        render: function (data, type, row) {
-                            return data ;
-                        }, orderable: false
-                    },
-                    {
-                        data: 'subTitle',
+                        data: 'categories',
                         render: function (data, type, row) {
                             return data;
                         },
                         orderable: false
                     },
                     {
-                        data: 'info',
+                        data: 'tags',
                         render: function (data, type, row) {
                             return data;
                         },
                         orderable: false
                     },
                     {
-                        data: 'link',
+                        data: 'price',
+                        render: function (data, type, row) {
+                            return data;
+                        }
+                    },
+                    {
+                        data: 'discount',
+                        render: function (data, type, row) {
+                            return data;
+                        }
+                    },
+                    {
+                        data: 'hot',
                         render: function (data, type, row) {
                             return data;
                         },
@@ -54,15 +60,15 @@
                         data: 'id',
                         render: function (data, type, row) {
                             var advId = data;
-                            var EditUrlUpdate = '/Admin/Slides/Update/' + advId;
-                            var EditUrlDelete = '/Admin/Slides/Delete/' + advId;
+                            var EditUrlUpdate = '/Admin/Products/Update/' + advId;
+                            var EditUrlDelete = '/Admin/Products/Delete/' + advId;
                             var dropdownHtml = '<div class="dropdown">' +
                                 '<button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">' +
                                 '<i class="bx bx-dots-vertical-rounded"></i>' +
                                 '</button>' +
                                 '<div class="dropdown-menu">' +
                                 '<a class="dropdown-item" href="' + EditUrlUpdate + '"><i class="bx bx-edit-alt me-1"></i> Edit</a>' +
-                                '<a class="dropdown-item" href="' + EditUrlDelete + '" ><i class="bx bx-trash me-1"></i> Delete</a>' +
+                                '<a class="dropdown-item" href="' + EditUrlDelete + '"><i class="bx bx-trash me-1"></i> Delete</a>' +
                                 '</div>' +
                                 '</div>';
                             return dropdownHtml;
@@ -71,6 +77,7 @@
                     }
                 ]
             });
+
 
         })
         .catch(function (error) {

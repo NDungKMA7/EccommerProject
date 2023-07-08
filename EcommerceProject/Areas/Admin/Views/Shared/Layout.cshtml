@@ -44,6 +44,7 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="~/admin/assets/js/config.js"></script>
+    <script language="javascript" src="~/admin/ckeditor/ckeditor.js"></script>
      <!-- Core CSS -->
     <link rel="stylesheet" href="~/admin/assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="~/admin/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
@@ -131,7 +132,7 @@
                     
 
 
-                    @if (User.IsInRole("admin"))
+                    @if (User.IsInRole("Admin"))
                     {
                     <!-- Users -->
 
@@ -168,7 +169,7 @@
                     </li>
                    
                     }
-                    @if (User.IsInRole("admin") || User.IsInRole("Seller"))
+                    @if (User.IsInRole("Admin") || User.IsInRole("Seller"))
                     {
                     <!-- Products -->
 
@@ -193,7 +194,7 @@
                         </a>
                     </li>
                     }
-                    @if (User.IsInRole("admin") || User.IsInRole("Author"))
+                    @if (User.IsInRole("Admin") || User.IsInRole("Author"))
                         {
                             <!-- News -->
                     <li class="menu-item">
@@ -250,6 +251,7 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+ 
 </body>
 
 </html>
