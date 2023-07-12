@@ -37,6 +37,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
                     Price = product.Price,
                     Hot = product.Hot,
                     Photo = product.Photo,
+                    ImgSub = product.ImgSub,
                     Categories = string.Join(", ", _context.CategoriesProducts
                         .Where(cp => cp.ProductId == product.Id)
                         .Join(_context.Categories, cp => cp.CategoryId, c => c.Id, (cp, c) => c.Name)),
@@ -85,33 +86,49 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 record.Hot = _hot;
                 record.Description = _description;
                 record.Content = _content;
-                string _FileName = "";
+                
+                
                 if (Request.Form.Files.Count > 0)
                 {
-                    var file = Request.Form.Files[0];
-                    if (record.Photo != null && System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", record.Photo)))
+                    var listImgSub = record.ImgSub.Split(", ");
+                    for(var item =0; item < listImgSub.Length - 1; item++)
                     {
-                        string oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Products", record.Photo);
-                        System.IO.File.Delete(oldFilePath);
+                        if (listImgSub[item] != " ")
+                        {
+                            System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", listImgSub[item]));
+                        }
                     }
-                    var timestamp = DateTime.Now.ToFileTime();
-                    _FileName = timestamp + "_" + file.FileName;
-                    string _Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Products", _FileName);
-                    using (var stream = new FileStream(_Path, FileMode.Create))
-                    {
-                        file.CopyTo(stream);
-                    }
-                    record.Photo = _FileName;
-                }
-                await _context.SaveChangesAsync();
 
+                    record.ImgSub = "";
+                    for (var item = 0; item < Request.Form.Files.Count; item++)
+                    {
+                        string imgsub = "";
+                        var timestamp = DateTime.Now.ToFileTime();
+                        var file = Request.Form.Files[item];
+                        imgsub = timestamp + "_" + Request.Form.Files[item].FileName;
+                        string _PathSub = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Products", imgsub);
+                        using (var stream = new FileStream(_PathSub, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                        }
+                        if (item == 0)
+                        {
+                            record.Photo = imgsub;
+                        }
+                        else
+                        {
+                            record.ImgSub += imgsub + ", ";
+                        }
+                    }
+                }
+               
                 List<ItemCategory> list_categories = await _context.Categories.ToListAsync();
                 List<ItemCategoriesProducts> list_category_product = await _context.CategoriesProducts.Where(item => item.ProductId == _id).ToListAsync();
                 foreach (var item in list_category_product)
                 {
                     _context.CategoriesProducts.Remove(item);
                 }
-                await _context.SaveChangesAsync();
+           
 
                 foreach (var itemCategory in list_categories)
                 {
@@ -122,7 +139,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
                         recordCategoryProduct.CategoryId = itemCategory.Id;
                         recordCategoryProduct.ProductId = _id;
                         _context.CategoriesProducts.Add(recordCategoryProduct);
-                        await _context.SaveChangesAsync();
+                      
                     }
                 }
 
@@ -131,8 +148,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 {
                     _context.TagsProducts.Remove(item_tag_product);
                 }
-                await _context.SaveChangesAsync();
-
+               
                 List<string> list_id_tags = Request.Form["tags"].ToList();
                 foreach (var tag_id in list_id_tags)
                 {
@@ -140,8 +156,9 @@ namespace EcommerceProject.Areas.Admin.Controllers
                     record_tag_product.TagId = Convert.ToInt32(tag_id);
                     record_tag_product.ProductId = _id;
                     _context.TagsProducts.Add(record_tag_product);
-                    await _context.SaveChangesAsync();
+                  
                 }
+                await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
             else
@@ -177,20 +194,32 @@ namespace EcommerceProject.Areas.Admin.Controllers
             record.Hot = _hot;
             record.Description = _description;
             record.Content = _content;
-            string _FileName = "";
+         
             if (Request.Form.Files.Count > 0)
             {
 
-                var file = Request.Form.Files[0];
-                var timestamp = DateTime.Now.ToFileTime();
-                _FileName = timestamp + "_" + file.FileName;
-                string _Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Products", _FileName);
-                using (var stream = new FileStream(_Path, FileMode.Create))
+                for (var item = 0; item < Request.Form.Files.Count; item++)
                 {
-                    file.CopyTo(stream);
+                    string imgsub = "";
+                    var timestamp = DateTime.Now.ToFileTime();
+                    var file = Request.Form.Files[item];
+                    imgsub = timestamp + "_" + Request.Form.Files[item].FileName;
+                    string _PathSub = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Upload/Products", imgsub);
+                    using (var stream = new FileStream(_PathSub, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    if (item == 0)
+                    {
+                        record.Photo = imgsub;
+                    }
+                    else
+                    {
+                        record.ImgSub += imgsub + ", ";
+                    }
                 }
-                record.Photo = _FileName;
             }
+
             _context.Products.Add(record);
             await _context.SaveChangesAsync();
             List<ItemCategory> list_categories = await _context.Categories.ToListAsync();
@@ -230,6 +259,15 @@ namespace EcommerceProject.Areas.Admin.Controllers
             {
                 _context.Products.Remove(record);
                 await _context.SaveChangesAsync();
+                var listImgSub = record.ImgSub.Split(", ");
+                foreach(var item in listImgSub)
+                {
+                    if(item != "")
+                    {
+                        System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", item));
+                    }
+                    
+                }
                 System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", record.Photo));
                 return RedirectToAction("Index");
             }
