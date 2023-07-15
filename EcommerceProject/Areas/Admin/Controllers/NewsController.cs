@@ -22,12 +22,12 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             return View("Index");
         }
-        public async Task<List<InfoNews>> GetListRecord()
+        public async Task<List<NewAdminDTO>> GetListRecord()
         {
            
             var news = await _context.News
                 .OrderByDescending(item => item.Id)
-                .Select(item => new InfoNews
+                .Select(item => new NewAdminDTO
                 {
                     Id = item.Id,
                     Name = item.Name,

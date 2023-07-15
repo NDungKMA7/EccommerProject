@@ -103,6 +103,10 @@ namespace EcommerceProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -234,6 +238,10 @@ namespace EcommerceProject.Migrations
 
                     b.Property<int>("Hot")
                         .HasColumnType("int");
+
+                    b.Property<string>("ImgSub")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()

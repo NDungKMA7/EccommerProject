@@ -589,3 +589,7 @@ E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\refint\EcommerceProject
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.pdb
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.genruntimeconfig.cache
 E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\ref\EcommerceProject.dll
+E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\JetBrains.Annotations.dll
+E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\X.PagedList.dll
+E:\C#\EcommerceProject\EcommerceProject\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
+E:\C#\EcommerceProject\EcommerceProject\obj\Debug\net6.0\EcommerceProject.MvcApplicationPartsAssemblyInfo.cs

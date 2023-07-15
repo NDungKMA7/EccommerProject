@@ -13,27 +13,35 @@ Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
                     <form method="post" enctype="multipart/form-data" action="@ViewBag.action">
                         <div class=" mb-3">
                             <label for="defaultFormControlInput" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                                aria-describedby="defaultFormControlHelp" name="Name" required />
+                            <input type="text" class="form-control" id="defaultFormControlInput" 
+                                aria-describedby="defaultFormControlHelp" name="Name" required  value="@if (Model != null) {
+                        <text>@Model.Name</text>
+                        }"/>
+                        </div>
+                         <div class=" mb-3">
+                            <label for="linkAdv" class="form-label">link Adv</label>
+                            <input type="text" class="form-control" id="linkAdv"
+                                aria-describedby="defaultFormControlHelp" name="linkAdv" required  value="@if (Model != null) {
+                        <text>@Model.Link</text>
+                        }"/>
                         </div>
                          <div class="  mb-3">
                                 <label for="exampleFormControlSelect1" class="form-label">Position select</label>
                                 <select class="form-select" id="exampleFormControlSelect1"
                                     aria-label="Default select example" name="Position">
                                     <option @if (Model !=null && Model.Position==1) { <text> selected</text>
-                                        } value="1">Trái (Dưới slide show)</option>
+                                        } value="1">Banner dưới Service Section Home Page</option>
                                     <option @if (Model !=null && Model.Position==2) { <text> selected</text>
-                                        } value="2">Phải (Dưới slide show)</option>
+                                        } value="2">Banner dưới Product Section Home Page</option>
                                     <option @if (Model !=null && Model.Position==3) { <text> selected</text>
-                                        } value="3">Trang sản phẩm - Banner</option>
+                                        } value="3">Banner dưới News Section Home Page</option>
                                     <option @if (Model !=null && Model.Position==4) { <text> selected</text>
-                                        } value="4">Trang sản phẩm - Dưới TAG</option>
-                                    <option @if (Model !=null && Model.Position==5) { <text> selected</text>
-                                        } value="5">Trang sản phẩm - Dưới Popular products</option>
+                                        } value="4">Banner dưới Siderbar Page</option>
+                                    
                                 </select>
                             </div>
                         <div class=" mb-3">
-                            <label for="formFileMultiple" class="form-label">Multiple files</label>
+                            <label for="formFileMultiple" class="form-label">Images files</label>
                             <input class="form-control" type="file" id="formFileMultiple" name="Photo" multiple />
                         </div>
                         <div class=" justify-content-end">

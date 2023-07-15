@@ -1,16 +1,32 @@
 {
   "Files": [
     {
-      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133333527195348893_b2s-special-desktop-dday-p1.webp",
-      "PackagePath": "staticwebassets\\Upload\\Adv\\133333527195348893_b2s-special-desktop-dday-p1.webp"
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336273866740692_banner-style-1-img-1.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336273866740692_banner-style-1-img-1.jpg"
     },
     {
-      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133333527907262031_Sliding-vpbank-bew0995.webp",
-      "PackagePath": "staticwebassets\\Upload\\Adv\\133333527907262031_Sliding-vpbank-bew0995.webp"
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336274063335062_banner-style-2-img-1.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336274063335062_banner-style-2-img-1.jpg"
     },
     {
-      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133333528167947003_banner-sliding-apple-112.webp",
-      "PackagePath": "staticwebassets\\Upload\\Adv\\133333528167947003_banner-sliding-apple-112.webp"
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336274356622902_banner-style-2-img-2.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336274356622902_banner-style-2-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336274886024783_banner-style-2-img-3.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336274886024783_banner-style-2-img-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336275031016201_banner-style-2-img-4.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336275031016201_banner-style-2-img-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336338154250339_banner-style-3-img-1.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336338154250339_banner-style-3-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Adv\\133336373198385733_side-banner.jpg",
+      "PackagePath": "staticwebassets\\Upload\\Adv\\133336373198385733_side-banner.jpg"
     },
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\News\\133333528878169072_Galaxy-S23-FE-Geekbench-cover.jpeg",
@@ -451,6 +467,54 @@
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336023798368017_macbook_mini_m2.webp",
       "PackagePath": "staticwebassets\\Upload\\Products\\133336023798368017_macbook_mini_m2.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336027365661944_mac-mini-4_1_2.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336027365661944_mac-mini-4_1_2.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336027365695662_mac-mini-2_1_4.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336027365695662_mac-mini-2_1_4.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336027365706400_mac-mini-3_1_2.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336027365706400_mac-mini-3_1_2.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336027365710323_macbook_mini_m2.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336027365710323_macbook_mini_m2.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336960688685102_apple-airtag.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336960688685102_apple-airtag.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336960688701145_apple-airtag-7.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336960688701145_apple-airtag-7.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336960688704936_apple-airtag-6.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336960688704936_apple-airtag-6.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336960688707237_airtag.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336960688707237_airtag.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336961182497383_mac-mini-4_1_2.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336961182497383_mac-mini-4_1_2.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336961182503340_mac-mini-2_1_4.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336961182503340_mac-mini-2_1_4.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336961182507063_mac-mini-3_1_2.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336961182507063_mac-mini-3_1_2.webp"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Products\\133336961182518369_macbook_mini_m2.webp",
+      "PackagePath": "staticwebassets\\Upload\\Products\\133336961182518369_macbook_mini_m2.webp"
     },
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\Upload\\Slides\\133327809671584760_Screenshot 2023-05-18 133922.png",
@@ -2639,6 +2703,658 @@
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\userAdmin.js",
       "PackagePath": "staticwebassets\\admin\\js\\userAdmin.js"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\ClientJs\\HomePage.js",
+      "PackagePath": "staticwebassets\\assets\\ClientJs\\HomePage.js"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\css\\plugins\\plugins.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\plugins.min.css"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.min.css"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\css\\vendor\\vendor.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\vendor.min.css"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\font-awesome\\fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\font-awesome\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\font-awesome\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\ionicon-fonts\\ionicons28b5.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicon-fonts\\ionicons28b5.eot"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\ionicon-fonts\\ionicons28b5.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicon-fonts\\ionicons28b5.svg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\ionicon-fonts\\ionicons28b5.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicon-fonts\\ionicons28b5.ttf"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\ionicon-fonts\\ionicons28b5.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicon-fonts\\ionicons28b5.woff"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.eot"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.svg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.ttf"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.woff"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icon-fonts\\Simple-Line-Iconsb26c.woff2"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\about\\ae8ac2fa217d23aadcc913989fcc34a2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\ae8ac2fa217d23aadcc913989fcc34a2.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\about\\img-about.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\img-about.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-1-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-1-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-10-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-10-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-11-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-11-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-11-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-11-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-12-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-12-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-13-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-13-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-2-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-2-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-2-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-2-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-2-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-2-img-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-2-img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-2-img-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-3-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-3-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-7.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-4-img-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-4-img-8.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-5-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-5-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-5-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-5-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-5-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-5-img-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-6-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-6-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-7-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-7-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-7-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-7-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-7-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-7-img-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-8-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-8-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-8-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-8-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\banner-style-9-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\banner-style-9-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\menu-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\menu-banner.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\banner\\side-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner\\side-banner.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\blog\\blog-grid-home-1-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-grid-home-1-img-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\blog\\blog-grid-home-1-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-grid-home-1-img-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\blog\\blog-grid-home-1-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-grid-home-1-img-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\blog\\blog-grid-home-1-img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-grid-home-1-img-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\blog\\blog-grid-home-1-img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-grid-home-1-img-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\blog\\blog-grid-home-1-img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-grid-home-1-img-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-1.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-2.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-3.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-4.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-5.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-6.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-7.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\company-logo-8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\company-logo-8.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\company-logo\\payment.png",
+      "PackagePath": "staticwebassets\\assets\\images\\company-logo\\payment.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\emprt-cart\\empty-cart.png",
+      "PackagePath": "staticwebassets\\assets\\images\\emprt-cart\\empty-cart.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-1\\hero-slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-1\\hero-slider-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-1\\hero-slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-1\\hero-slider-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-2\\hero-slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-2\\hero-slider-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-2\\hero-slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-2\\hero-slider-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-3\\hero-slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-3\\hero-slider-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-3\\hero-slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-3\\hero-slider-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-4\\hero-slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-4\\hero-slider-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\hero-slider\\home-4\\hero-slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-slider\\home-4\\hero-slider-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\bkg_grid.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\bkg_grid.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\bkg_list.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\bkg_list.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\icon_about1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\icon_about1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\icon_about2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\icon_about2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\icon_about3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\icon_about3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\icon_about4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\icon_about4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-1.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-2.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-3.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-4.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-5.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-6.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-7.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\service-promo-8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\service-promo-8.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\icons\\top-arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\top-arrow.svg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\instagram\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\instagram\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\instagram\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\instagram\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\instagram\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\instagram\\instagram-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\logo\\logo_black.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo_black.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\logo\\logo_white.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo_white.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-10.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-11.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-12.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-7.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-8.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-1\\default-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-1\\default-9.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-10.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-11.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-12.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-13.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-14.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-15.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-16.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-16.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-17.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-17.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-18.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-18.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-7.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-8.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-2\\default-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-2\\default-9.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-10.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-11.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-7.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-8.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-3\\default-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-3\\default-9.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-1.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-10.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-11.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-2.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-3.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-4.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-5.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-6.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-7.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-8.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\product\\default\\home-4\\default-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\default\\home-4\\default-9.jpg"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\team\\leader1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\leader1.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\team\\leader2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\leader2.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\team\\leader3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\leader3.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\team\\leader4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\leader4.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\user\\image-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\image-1.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\user\\image-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\image-2.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\images\\user\\image-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\user\\image-3.png"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\js\\plugins\\plugins.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\plugins.min.js"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\assets\\js\\vendor\\vendor.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\vendor.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EcommerceProject.Microsoft.AspNetCore.StaticWebAssets.props",

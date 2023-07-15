@@ -35,10 +35,11 @@ namespace EcommerceProject.Areas.Admin.Controllers
 
             string _Name = fc["Name"].ToString().Trim();
             int _Position = Convert.ToInt32(fc["Position"].ToString().Trim());
+            string _Link = fc["linkAdv"].ToString().Trim();
             ItemAdv record = new ItemAdv();
             record.Name = _Name;
             record.Position = _Position;
-
+            record.Link = _Link;
             string _FileName = "";
             if (Request.Form.Files.Count > 0)
             {
@@ -95,13 +96,14 @@ namespace EcommerceProject.Areas.Admin.Controllers
         {
             string _Name = fc["Name"].ToString().Trim();
             int _Position = Convert.ToInt32(fc["Position"].ToString().Trim());
+            string _Link = fc["linkAdv"].ToString().Trim();
             int _id = id ?? 0;
             var record = await _context.Adv.FirstOrDefaultAsync(c => c.Id == _id);
             if (record != null)
             {
                 record.Name = _Name;
                 record.Position = _Position;
-
+                record.Link = _Link;
                 string _FileName = "";
                 if (Request.Form.Files.Count > 0)
                 {

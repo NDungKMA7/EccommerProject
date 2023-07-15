@@ -19,13 +19,6 @@
                     {
                         data: 'photo',
                         render: function (data, type, row) {
-                            return '<img src="/Upload/Products/' + data + '" style="width:100px;" />';
-                        },
-                        orderable: false
-                    },
-                    {
-                        data: 'imgSub',
-                        render: function (data, type, row) {
                             var html = '';
                             if (data != " ") {
                                 var elements = data.split(', ');

@@ -15,6 +15,6 @@ namespace EcommerceProject.Models.Mapping
         public double Price { get; set; }
         public int Hot { get; set; }
         public string Photo { get; set; } = string.Empty;
-        public string ImgSub { get; set; } = "";
+    
     }
 }

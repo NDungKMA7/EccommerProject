@@ -25,11 +25,11 @@ namespace EcommerceProject.Areas.Admin.Controllers
             return View("Index");
         }
 
-        public async Task<List<InfoProducts>> GetListProducts()
+        public async Task<List<ProductAdminDTO>> GetListProducts()
         {
             var products = await _context.Products
                 .OrderByDescending(item => item.Id)
-                .Select(product => new InfoProducts
+                .Select(product => new ProductAdminDTO
                 {
                     Id = product.Id,
                     Name = product.Name,
@@ -37,7 +37,6 @@ namespace EcommerceProject.Areas.Admin.Controllers
                     Price = product.Price,
                     Hot = product.Hot,
                     Photo = product.Photo,
-                    ImgSub = product.ImgSub,
                     Categories = string.Join(", ", _context.CategoriesProducts
                         .Where(cp => cp.ProductId == product.Id)
                         .Join(_context.Categories, cp => cp.CategoryId, c => c.Id, (cp, c) => c.Name)),
@@ -90,16 +89,16 @@ namespace EcommerceProject.Areas.Admin.Controllers
                 
                 if (Request.Form.Files.Count > 0)
                 {
-                    var listImgSub = record.ImgSub.Split(", ");
-                    for(var item =0; item < listImgSub.Length - 1; item++)
+                    var _imageList = record.Photo.Split(", ");
+                    for(var item =0; item < _imageList.Length - 1; item++)
                     {
-                        if (listImgSub[item] != " ")
+                        if (_imageList[item] != " ")
                         {
-                            System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", listImgSub[item]));
+                            System.IO.File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Upload", "Products", _imageList[item]));
                         }
                     }
 
-                    record.ImgSub = "";
+                    record.Photo = "";
                     for (var item = 0; item < Request.Form.Files.Count; item++)
                     {
                         string imgsub = "";
@@ -111,14 +110,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
                         {
                             file.CopyTo(stream);
                         }
-                        if (item == 0)
-                        {
-                            record.Photo = imgsub;
-                        }
-                        else
-                        {
-                            record.ImgSub += imgsub + ", ";
-                        }
+                        record.Photo += imgsub + ", ";
                     }
                 }
                
@@ -209,14 +201,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
                     {
                         file.CopyTo(stream);
                     }
-                    if (item == 0)
-                    {
-                        record.Photo = imgsub;
-                    }
-                    else
-                    {
-                        record.ImgSub += imgsub + ", ";
-                    }
+                    record.Photo += imgsub + ", ";
                 }
             }
 
@@ -259,7 +244,7 @@ namespace EcommerceProject.Areas.Admin.Controllers
             {
                 _context.Products.Remove(record);
                 await _context.SaveChangesAsync();
-                var listImgSub = record.ImgSub.Split(", ");
+                var listImgSub = record.Photo.Split(", ");
                 foreach(var item in listImgSub)
                 {
                     if(item != "")

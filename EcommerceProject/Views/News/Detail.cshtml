@@ -1,0 +1,29 @@
+﻿@using EcommerceProject.DTO;
+@using EcommerceProject.Models.Mapping;
+@{
+    Layout = "~/Views/Shared/_LayoutProductPage.cshtml";
+    ItemNew record = Model;
+}
+<div class="col-lg-9">
+                    <!-- Start Blog Single Content Area -->
+                    <div class="blog-single-wrapper">
+                        <div class="blog-single-img" data-aos="fade-up" data-aos-delay="0">
+                            <img class="img-fluid" src="/Upload/News/@record.Photo"
+                                                alt="@record.Photo">
+                        </div>
+                        <ul class="post-meta" data-aos="fade-up" data-aos-delay="200">
+                            <li>POSTED BY : <a href="#" class="author">Admin</a></li>
+                        
+                        </ul>
+                        <h4 class="post-title" data-aos="fade-up" data-aos-delay="400">@record.Name</h4>
+                        <div class="para-content" data-aos="fade-up" data-aos-delay="600">
+                            <p>@Html.Raw(record.Description)</p>
+                             <p>@Html.Raw(record.Content)</p>
+                        </div>
+                        <div class="para-tags" data-aos="fade-up" data-aos-delay="0">
+                            <span>@ViewBag.CategoriesName </span>
+                           
+                        </div>
+                    </div> <!-- End Blog Single Content Area -->
+                   
+                </div>

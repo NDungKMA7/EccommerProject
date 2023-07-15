@@ -29,19 +29,19 @@
                         render: function (data, type, row) {
                             switch (data) {
                                 case 1: {
-                                    return 'Trái (Dưới slide show)';
+                                    return 'Banner dưới Service Section Home Page';
                                     break;
                                 };
                                 case 2: {
-                                    return 'Phải (Dưới slide show)';
+                                    return 'Banner dưới Product Section Home Page';
                                     break;
                                 };
                                 case 3: {
-                                    return 'Trang sản phẩm - Banner';
+                                    return 'Banner dưới News Section Home Page';
                                     break;
                                 };
                                 case 4: {
-                                    return 'Trang sản phẩm - Dưới TAG';
+                                    return 'Banner dưới Siderbar Page';
                                     break;
                                 };
                             }
