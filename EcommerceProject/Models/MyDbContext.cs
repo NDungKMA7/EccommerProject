@@ -18,5 +18,7 @@ namespace EcommerceProject.Models
         public DbSet<ItemAdv> Adv { get; set; }
         public DbSet<ItemSlide> Slides { get; set; }
         public DbSet<ItemListArticle> ListArticle { get; set; }
+        public DbSet<ItemOrder> Orders { get; set; }
+        public DbSet<ItemOrderDetail> OrdersDetail { get; set; }
     }
 }

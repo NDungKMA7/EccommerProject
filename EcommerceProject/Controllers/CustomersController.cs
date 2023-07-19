@@ -95,7 +95,7 @@ namespace EcommerceProject.Controllers
             {
                 await _signInManager.SignInAsync(userRegis, isPersistent: false);
 
-                await userManager.AddToRoleAsync(userRegis, "User");
+                await userManager.AddToRoleAsync(userRegis, "Customer");
 
                 return Redirect("/Home/Index");
             }

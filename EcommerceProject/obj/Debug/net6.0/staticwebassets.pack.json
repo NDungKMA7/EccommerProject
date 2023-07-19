@@ -2685,8 +2685,16 @@
       "PackagePath": "staticwebassets\\admin\\js\\categoriesAdmin.js"
     },
     {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\detailOrder.js",
+      "PackagePath": "staticwebassets\\admin\\js\\detailOrder.js"
+    },
+    {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\newsAdmin.js",
       "PackagePath": "staticwebassets\\admin\\js\\newsAdmin.js"
+    },
+    {
+      "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\oderAdmin.js",
+      "PackagePath": "staticwebassets\\admin\\js\\oderAdmin.js"
     },
     {
       "Id": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\productAdmin.js",

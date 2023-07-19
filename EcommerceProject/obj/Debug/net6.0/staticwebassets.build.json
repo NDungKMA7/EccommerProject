@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cuiozI7m57P0DhofIsB3kvpSTd+aq5RV7Z2M/tJHEJM=",
+  "Hash": "7uFc7/1e2jIPfYuiBduISjUUfKKZS8MpGKFTzQaFm6c=",
   "Source": "EcommerceProject",
   "BasePath": "_content/EcommerceProject",
   "Mode": "Default",
@@ -9078,6 +9078,23 @@
       "OriginalItemSpec": "wwwroot\\admin\\js\\categoriesAdmin.js"
     },
     {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\detailOrder.js",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "admin/js/detailOrder.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\detailOrder.js"
+    },
+    {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\ListArticle.js",
       "SourceId": "EcommerceProject",
       "SourceType": "Discovered",
@@ -9110,6 +9127,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\js\\newsAdmin.js"
+    },
+    {
+      "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\oderAdmin.js",
+      "SourceId": "EcommerceProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\",
+      "BasePath": "_content/EcommerceProject",
+      "RelativePath": "admin/js/oderAdmin.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\oderAdmin.js"
     },
     {
       "Identity": "E:\\C#\\EcommerceProject\\EcommerceProject\\wwwroot\\admin\\js\\productAdmin.js",

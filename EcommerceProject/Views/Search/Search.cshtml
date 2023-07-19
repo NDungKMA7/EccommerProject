@@ -1,32 +1,12 @@
-﻿@{
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@{
 Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
     string controllerName = Context.Request.RouteValues["controller"].ToString();
 	string actionName = Context.Request.RouteValues["action"].ToString();
 }
 
-<!-- ...:::: Start Breadcrumb Section:::... -->
-<div class="breadcrumb-section breadcrumb-bg-color--golden">
-    <div class="breadcrumb-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <h3 class="breadcrumb-title">Shop - Search Price
-                    </h3>
-                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
-                        <nav aria-label="breadcrumb">
-                            <ul>
-                                <li><a href="/Home">Home</a></li>
-                                <li><a href="/Products/Index">Shop</a></li>
-                                <li class="active" aria-current="page">Search - @actionName</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- ...:::: End Breadcrumb Section:::... -->
+    @Html.Partial("~/Views/Shared/_Breadcrumb.cshtml")
 <!-- ...:::: Start Shop Section:::... -->
 <div class="shop-section">
     <div class="container">
@@ -145,13 +125,11 @@ Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
                                                             </ul>
                                                         </div>
                                                         <div class="content-right">
-                                                            @{
-                                                            var PriceAfter = item.Price - (item.Price *
-                                                            item.Discount)/100;
-
-                                                            }
-                                                            <span class="price">@if (item.Discount > 0) {<del>
-                                                                    @item.Price </del>} @PriceAfter </span>
+                                                           @{
+                                                    var PriceAfter = string.Format("{0:#,#.}",item.Price - (item.Price * item.Discount)/100);
+                                                   
+                                                    }
+                                               <span class="price">@if (item.Discount > 0) {<del> @string.Format("{0:#,#.}",item.Price) </del>}  @PriceAfter </span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -205,11 +183,10 @@ Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
                                                             <li class="empty"><i class="ion-android-star"></i></li>
                                                         </ul>
                                                         @{
-                                                        var PriceAfter = item.Price - (item.Price * item.Discount)/100;
-
-                                                        }
-                                                        <span class="product-list-price">@if (item.Discount > 0) {<del>
-                                                                @item.Price </del>} @PriceAfter</span>
+                                                    var PriceAfter = string.Format("{0:#,#.}",item.Price - (item.Price * item.Discount)/100);
+                                                   
+                                                    }
+                                               <span class="price">@if (item.Discount > 0) {<del> @string.Format("{0:#,#.}",item.Price) </del>}  @PriceAfter </span>
                                                         <p>@Html.Raw(item.Description)</p>
                                                         <div class="product-action-icon-link-list">
                                                             <a href="/Cart/Add/@item.Id"
@@ -236,14 +213,25 @@ Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
                 </div> <!-- End Tab Wrapper -->
 
                 <!-- Start Pagination -->
-                <div class="page-pagination text-center" data-aos="fade-up" data-aos-delay="0">
-                    <ul>
-                        <li><a class="active" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#"><i class="ion-ios-skipforward"></i></a></li>
-                    </ul>
-                </div> <!-- End Pagination -->
+              <div class="page-pagination text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+                         @Html.PagedListPager((IPagedList)Model, p => Url.Action("Index", new { page = p }))
+                    </div>
+                    <style>
+                    .page-pagination .pagination .active span {
+        padding: 0 15px;
+        line-height: 40px;
+        height: 40px;
+        display: block;
+        border: 1px solid #d5d5d5;
+     background: #b19361;
+    color: #FFF;
+        border-radius: 3px;
+        font-weight: 500;
+    }
+    .pagination{
+        display: block;
+    }
+                    </style> <!-- End Pagination -->
             </div> <!-- End Shop Product Sorting Section  -->
         </div>
     </div>

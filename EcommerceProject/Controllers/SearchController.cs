@@ -45,10 +45,7 @@ namespace EcommerceProject.Controllers
             ViewBag.AdvSiderbar = _AdvSiderbar;
             ViewBag.CategoryList = await _context.Categories.ToListAsync();
             
-            string strOrder = "";
-            if (!String.IsNullOrEmpty(Request.Query["order"]))
-                strOrder = Request.Query["order"];
-            list_record = sortRequest(list_record, strOrder);
+            list_record = sortRequest(list_record);
 
             return View("Search", list_record.ToPagedList(current_page, record_per_page));
         }
@@ -63,14 +60,25 @@ namespace EcommerceProject.Controllers
                                             where tp.TagId == id
                                             select p;
             List<ItemProduct> list_product = list_record.ToList();
+           
+            list_product = sortRequest(list_product);
+            return View("Search", list_product.ToPagedList(current_page, record_per_page));
+        }
+        public async Task<IActionResult>  SearchName(int? page)
+        {
+            string key = !String.IsNullOrEmpty(Request.Query["key"]) ? Request.Query["key"] : "0";
+            ViewBag.breadcrumb = key;
+            int current_page = page ?? 1;
+            int record_per_page = 12;
+            List<ItemProduct> list_record = await _context.Products.Where(item => item.Name.Contains(key)).OrderByDescending(item => item.Id).ToListAsync();
+            list_record = sortRequest(list_record);
+            return View("Search", list_record.ToPagedList(current_page, record_per_page));
+        }
+        public List<ItemProduct> sortRequest(List<ItemProduct> list_record)
+        {
             string strOrder = "";
             if (!String.IsNullOrEmpty(Request.Query["order"]))
                 strOrder = Request.Query["order"];
-            list_product = sortRequest(list_product, strOrder);
-            return View("Search", list_product.ToPagedList(current_page, record_per_page));
-        }
-        public List<ItemProduct> sortRequest(List<ItemProduct> list_record, string strOrder)
-        {
             switch (strOrder)
             {
                 case "name-asc":

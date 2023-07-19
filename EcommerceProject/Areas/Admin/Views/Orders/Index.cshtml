@@ -1,0 +1,33 @@
+﻿@{
+Layout = "~/Areas/Admin/Views/Shared/Layout.cshtml";
+}
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <!-- Responsive Table -->
+        <div class="card">
+            <h5 class="card-header ">Orders Table</h5>
+            <div class="table-responsive text-nowrap p-3">
+                <table id="OrderTable"  class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr class="text-nowrap">
+                           <th>Name</th> 
+                           <th>Address</th>
+                           <th>Phone</th>
+                           <th>Created</th>
+                             <th>Status</th>
+                               <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tb-body" class="table-border-bottom-0">
+
+                     
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--/ Responsive Table -->
+    </div>
+</div>
+   <script src="~/admin/js/oderadmin.js"></script>
